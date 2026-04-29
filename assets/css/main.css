@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'slabo';
+    src: url(../../assets/Fonts/Slabo_27px/Slabo27px-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dancing';
+    src: url(../../assets/Fonts/Dancing_Script/static/DancingScript-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    text-align: center;
+    background: linear-gradient(to right, burlywood, yellow);
+    font-family: 'slabo', Arial; 
+}   
+
+h1 {
+    margin-bottom: -25px;
+}
+
+fieldset {
+    border-color: black;
+    outline-color: black;
+    border-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.main-area {
+    background-color: khaki;
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+    border-color: black;
+    border-style:solid;
+}
+
+.love {
+    color:palevioletred;
+    font-family: 'dancing', Arial;
+}
+
+.navigation > a {
+    display: inline;
+    font-size: 20px;
+}
+
+article {
+    font-size: 25px;
+    margin-bottom: -50px;
+    margin-top: -20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:hover {
+    color: orange;
+}
+
+button {
+    background-color: burlywood;
+    border-style:solid;
+    border-color: black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: 'slabo', Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    color: white;
+}

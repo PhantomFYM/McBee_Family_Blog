@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'prompt';
+    src: url(../../Fonts/Prompt/Prompt-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    font-family: 'prompt', Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left, mediumorchid, lightgreen);
+}
+
+* {
+    text-align: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+.heading {
+    background-color: seagreen;
+    color: seashell;
+    display: inline-block;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-style:solid;
+    border-color: black;
+    box-shadow: 10px 10px 10px 0px black;
+    
+}
+
+.navigation {
+    text-decoration: none;
+    background-color: black;
+    color: seashell;
+    border-radius: 20px;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.navigation:hover {
+    background-color: rgb(38, 37, 37);
+}
+
+.content-card {
+    border: solid black;
+    border-radius: 20px;;
+    max-width: 75%;
+    background-color: lightgreen;
+    margin: auto;
+    margin-bottom: 50px;box-shadow: 10px 10px 10px 0px;
+    box-shadow: 10px 10px 10px 0px;
+}
+
+.content-img {
+    min-width: 100%;
+    max-width: 100%;
+    background-color: aqua;
+    border-radius: 20px;
+    border-bottom: solid;
+}
+
+.content-title {
+    padding: 10px;
+}
+
+.content-description {
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.read-more {
+    display: inline-block
+}
+.read-more > a {
+    width: 100%;
+    padding: 10px;
+}
+.read-more, .read-more > a {
+    background-color: mediumorchid;
+    color: seashell;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: -10px;
+    transition: transform 0.3s, background-color 0.3s ease;
+
+}
+
+.read-more:hover, .read-more > a:hover {
+    background-color: purple;
+    transform: scale(1.1)
+}
+
+#big-red-exclamation-point {
+    display: inline-block;
+    text-align: center !important;
+    font-size: 75px;
+    color: red;
+    margin-top: -5px;
+    margin-bottom: 2px;
+    transition: transform 0.1s ease;
+}
+
+#big-red-exclamation-point:hover {
+    transform: translateX(100px);
+}
+
+#callout-box {
+    background-color: rgba(249, 249, 102, 0.776);
+    padding: 10px;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 70px;
+    border-left: solid orange 5px;
+}
+
+#callout-box > p {
+    text-align: left;
+}
+
+

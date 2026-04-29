@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'pixel';
+    src: url(../../Fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    font-family: "pixel", Arial, sans-serif;
+    background-color: dodgerblue;
+    background-image:url(../../images/DragonQuest/slime.png);
+    color: cornsilk
+}
+
+table {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-style:double;
+    border-color: white;
+    padding: 10px;
+    
+}
+
+#progress-bar, h1, h2, figcaption, .home, .quick-nav{
+background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-style:double;
+    border-color: white;
+    max-width:fit-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+img {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-style:double;
+    border-color: white;
+    max-width:fit-content;
+    margin: auto;
+    margin-bottom: -2px;
+}
+
+#home-image {
+    background-color: transparent;
+    border-style: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color:lightblue;
+}
+
+fieldset {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-style: double;
+    outline:black;
+    border-width:5px;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 30px;
+}
+
+legend {
+    position: absolute;
+    top: 5px;
+    left:20px;
+    font-size: 25px
+    
+}
+
+li {
+    list-style-type:square;
+    text-align: left;
+
+}
+
+p {
+    text-align: justify
+}

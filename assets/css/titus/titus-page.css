@@ -1,0 +1,22 @@
+body {
+    background-image: url(../../images/titus_page.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+   
+}
+
+.content-card {
+    display: block;
+    max-width: fit-content;
+    margin: 15px auto;
+    background: linear-gradient(to right, orange, orchid);
+    text-align: center;
+    border: black solid;
+    padding: 10px 30px;
+    
+}
+
+.content-image {
+    max-width: 25vh;
+}

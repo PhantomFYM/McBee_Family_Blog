@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'bitcount';
+    src: url(../../Fonts/Bitcount_Grid_Double/static/BitcountGridDouble-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: auto;
+    font-family: 'bitcount', Arial, Helvetica, sans-serif;
+    color: purple;
+    text-align: center;
+    max-width: 800px;
+    background-image: url("../../images/titus_article.png");
+    background-size: contain;
+    max-height: 200px;
+}
+
+main, h1, a {
+    background-color: coral;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 15px;
+    
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}

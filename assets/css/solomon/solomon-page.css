@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'oxanium';
+    src: url(../../Fonts/oxanium/Oxanium-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'oxanium';
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#big-axe {
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+article {
+    max-width: 10%;
+    display:inline-block;
+    margin: 50px;
+}
+
+.article-image{
+    width:100%;
+}
+
+h1 {
+    text-align: right;
+    font-style:italic
+}
+
+h2 {
+ 
+    font-size: 1rem;
+}
+
+#home-button {
+    font-size: larger;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
