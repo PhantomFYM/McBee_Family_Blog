@@ -23,6 +23,21 @@ table {
     
 }
 
+.home-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  border-radius: 5px;
+}
+
 #progress-bar, h1, h2, figcaption, .home, .quick-nav{
 background-color: black;
     color: white;

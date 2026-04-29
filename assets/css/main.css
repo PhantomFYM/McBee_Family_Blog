@@ -24,6 +24,10 @@ h1 {
     margin-bottom: -25px;
 }
 
+article h2 {
+    font-size: 2rem;
+}
+
 fieldset {
     border-color: black;
     outline-color: black;
@@ -48,8 +52,15 @@ fieldset {
 }
 
 .navigation > a {
-    display: inline;
-    font-size: 20px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 550;
+    background-color: burlywood;
+    color: black;
+    border-radius: 5px;
+    border: black solid;
+    margin:  5px auto;
+    padding: 4px
 }
 
 article {

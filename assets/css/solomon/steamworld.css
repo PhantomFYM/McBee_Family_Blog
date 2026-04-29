@@ -23,12 +23,32 @@ nav {
     margin-bottom: 20px;
 }
 
-#home-button {
-    font-size: larger;
-    color: white;
+#return-to-page {
+    font-size: 3vw;
     background-color: black;
-    padding: 10px;
-    border-radius: 20px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px
+
+}
+
+#return-to-page:hover {
+    color: lightgray;
+}
+
+.home-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  border-radius: 5px;
 }
 
 h1 {
