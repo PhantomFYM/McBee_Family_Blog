@@ -20,6 +20,7 @@ strong {
 
 li {
     margin: 10px;
+    padding-right: 2vw;
 }
 
 li:last-of-type {
