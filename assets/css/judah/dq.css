@@ -10,7 +10,9 @@ body {
     font-family: "pixel", Arial, sans-serif;
     background-color: dodgerblue;
     background-image:url(../../images/DragonQuest/slime.png);
-    color: cornsilk
+    color: cornsilk;
+    max-width:min-content;
+    margin: auto;
 }
 
 table {
