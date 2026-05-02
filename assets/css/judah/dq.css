@@ -82,7 +82,7 @@ legend {
     position: absolute;
     top: 5px;
     left:20px;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: 1rem;
     display: block;
     
 }
