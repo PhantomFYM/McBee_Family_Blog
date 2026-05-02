@@ -23,7 +23,7 @@ table {
     
 }
 
-#progress-bar, h1, h2, figcaption, .home, .quick-nav{
+#progress-bar, h1, h2, figcaption, .quick-nav{
 background-color: black;
     color: white;
     border-radius: 20px;

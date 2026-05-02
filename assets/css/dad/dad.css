@@ -1,0 +1,27 @@
+h1, h2 {
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+ol, ul {
+    max-width: 800px;
+    text-align: justify;
+    margin: auto;
+    font-size: 1rem;
+}
+strong {
+    font-size: 1.2rem;
+}
+
+li {
+    margin: 10px;
+}
+
+li:last-of-type {
+    padding-bottom: 50px;
+}
