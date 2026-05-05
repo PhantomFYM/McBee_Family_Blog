@@ -13,35 +13,32 @@ body {
     font-family: 'slabo', Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    background-color: rgb(223, 210, 90);
+    border: solid black 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+
 main {
+    display: flex;
+    flex-wrap: wrap;
     background-color: khaki;
     width: 85%;
-    max-width: 2000px;
+    max-width: 1400px;
     margin: auto;
     border-radius: 20px;
     border-style: solid;
+    justify-content:flex-start;
+    align-content:flex-start;
 }
 
 figure {
-    display:inline-block;
-    vertical-align: top;
-    width:20%
+    max-width: 20%;
 }
 img {
     max-width:100%;
-    display: inline-block;
     border: 3px solid;
-    vertical-align: middle;
-}
-
-a {
-    color: black;
-}
-
-a:active {
-    color: yellow;
-}
-
-a:hover {
-    color: orange;
 }

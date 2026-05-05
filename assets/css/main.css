@@ -28,16 +28,18 @@ article h2 {
     font-size: 2rem;
 }
 
+p {
+    padding-bottom: 20px;
+}
+
 fieldset {
     border-color: black;
     outline-color: black;
     border-style: solid;
     border-left-color: transparent;
     border-right-color: transparent;
-}
-
-fieldset:last-of-type {
     border-bottom: none;
+    padding-bottom: 20px;
 }
 
 .main-area {
