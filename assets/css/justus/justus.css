@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: hsl(120, 50%, 60%)
+}
+
+audio {
+    margin: 50px auto;
+}

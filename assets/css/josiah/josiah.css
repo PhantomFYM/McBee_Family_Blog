@@ -3,6 +3,7 @@ body {
     height: 100vh;
     text-align: center;
     margin: auto;
+    background-color: hsl(60, 90%, 60%);
 }
 
 p {
