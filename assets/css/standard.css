@@ -12,5 +12,10 @@
   z-index: 1000;
   border-radius: 5px;
   width: 7vw;
-  font-size: 2vw;
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+.home-button:hover {
+  background-color: hsl(10deg 0% 20%);
 }
