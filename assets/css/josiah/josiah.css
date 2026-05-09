@@ -11,7 +11,7 @@ body {
 
 p {
     text-align: left;
-    font-size: 50px;
+    font-size: 3.5rem;
     background-color: hsl(60, 90%, 60%);
     padding: 10px 20px;
     border: solid black 2px;
@@ -31,6 +31,7 @@ a {
     padding: 5px;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 2rem;
 }
 
 a:hover {
