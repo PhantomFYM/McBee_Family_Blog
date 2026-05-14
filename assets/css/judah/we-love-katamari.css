@@ -110,6 +110,52 @@ body {
     height: 20px;
     background-color: rgb(251, 220, 180);
     border: solid hsl(90deg 75% 50%) 1px;
+    border-top: none;
+}
+
+#mouth {
+    position: absolute;
+    background-color: red;
+    width: 4px;
+    height: 4px;
+    border-radius: 50px;
+    top: 10px;
+    left: 10px;
+
+}
+
+#left-eye {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 2px solid black;
+    left: 6px;
+    top: 4px;
+
+}
+
+#right-eye {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 2px solid black;
+    top: 4px;
+    right: 5px;
+}
+
+#nose {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 4px solid rgb(185, 145, 92);
+    top: 4px;
+    left: 11px;
 }
 
 #prince-head {
@@ -123,6 +169,36 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 
+}
+
+#prince-antenna {
+    position: absolute;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 15px solid yellow;
+    transform: rotate(10deg);
+    top: 15px;
+    left: 4px;
+}
+
+#prince-pom-pom {
+    position: absolute;
+    border-radius: 50px;
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    top: 12px;
+    left: 5px;
+}
+
+#prince-hand {
+    position: absolute;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid rgb(19, 160, 19);
+    transform: rotate(-90deg);
+    right: -0.2px;
+    top: 50px;
 }
 
 #roof {
