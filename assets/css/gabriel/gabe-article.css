@@ -24,6 +24,12 @@ h1 {
     margin-bottom: 10px;
 }
 
+.the-end{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
 p {
     width: 80%;
     text-align: justify;
@@ -44,3 +50,4 @@ figure {
 img {
     max-width: 100%;
 }
+
