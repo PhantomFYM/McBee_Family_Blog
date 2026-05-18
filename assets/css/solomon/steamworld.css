@@ -16,6 +16,13 @@ body {
     background-color: midnightblue;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    row-gap: 5px;
+}
+
 nav {
     display: block;
     text-align: center;
@@ -24,13 +31,18 @@ nav {
 }
 
 #return-to-page {
-    font-size: 3vw;
     background-color: black;
     color: white;
     border-radius: 5px;
     padding: 10px
 
 }
+
+#return-to-page, .date, .description {
+    font-size: 5vw;
+}
+
+
 
 #return-to-page:hover {
     color: lightgray;
@@ -44,15 +56,10 @@ h1 {
 }
 
 .content-card {
-    display: inline-block;
-    margin: auto;
-    max-width: 36%;
+    max-width: 300px;
     border: solid black;
     border-radius: 20px;
     padding: 5px 15px;
-    vertical-align: top;
-    margin-right: 30px;
-    margin-bottom: 30px;
     background-color: white;
 }
 
@@ -63,18 +70,16 @@ h1 {
 
 .title {
     text-align: center;
-    font-size: 3vw;
+    font-size: 6vw;
 }
 
 .date {
     text-align: center;
-    margin: 5px;
-    font-size: 3vw;
+    margin-bottom: 5px;
 }
 
 .description {
     text-align: justify;
-    font-size: 2vw;
 }
 
 a {
@@ -84,4 +89,19 @@ a {
 
 .content-card:hover {
     background-color: lightgray;
+}
+
+
+@media (min-width: 400px) {
+    #return-to-page, .date, .description {
+    font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    main {
+        row-gap: 20px;
+    }
 }

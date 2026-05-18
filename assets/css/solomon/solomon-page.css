@@ -12,10 +12,16 @@ body {
 }
 
 #big-axe {
-    width: 300px;
     display: block;
+    width: 300px;
     text-align: center;
     margin: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 article {
