@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'slabo';
+    src: url(../../Fonts/Slabo_27px/Slabo27px-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'slabo', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: blue;
+}
+
+.grid-box{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    align-content:center;
+    background-color: hsl(240deg, 5%, 70%, 0.5);
+    color: white;
+    padding: 5px;
+}
+
+.grid-box:hover {
+    transform:scale(1.025);
+    transition: 0.3s ease;
+}
+
+
+.big {
+    color: hsl(50deg, 80%, 70%);
+    font-weight: 700;
+    font-style: inset;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.5px hsl(50deg, 80%, 50%);
+}
+
+ol, ul {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: -30px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+#grid-container {
+    max-width: 100vw;
+    max-height: 3000px;
+    gap: 5px;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    'home name-day name name city-state grand-company'
+    'char-image char-image major-equip major-equip t-item-lvl total-minion'
+    'char-image char-image major-equip major-equip job-lvl recent-minion'
+    'char-image char-image t-achievement recent-achievement recent-achievement recent-minion'
+    't-mounts recent-mounts lore lore lore lore'
+    't-mounts recent-mounts lore lore lore lore'
+    'fav-mount recent-mounts lore lore lore lore';
+}
+
+@media (max-width: 1000px) {
+#grid-container {
+    display: grid;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:minmax(150px, 200px);
+    grid-template-areas:
+    /* Row 1 & 2: Header Stats stacked */
+      'home name-day' 
+      'name name'
+      'city-state grand-company'
+      
+      /* Row 3: Big Character Portrait */
+      'char-image char-image'
+      
+      /* Row 4 & 5: Gear & Levels side-by-side */
+      'major-equip major-equip'
+      't-item-lvl job-lvl'
+      
+      /* Row 6 & 7: Achievements & Collections */
+      't-achievement recent-achievement'
+      'total-minion recent-minion'
+      
+      /* Row 8 & 9: Mount Trackers */
+      't-mounts fav-mount'
+      'recent-mounts recent-mounts'
+      
+      /* Row 10: Backstory spans the full width at the bottom */
+      'lore lore';
+}
+
+#char-image {
+    max-height: 450px;
+}
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#home {
+    grid-area: home;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#home > a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+#home:hover {
+    background-color: hsl(1deg, 0%, 10%);
+    transition: 0.3s ease;
+}
+
+#name-day {
+    grid-area: name-day;
+
+}
+
+#name {
+    grid-area: name;
+}
+
+#city-state {
+    grid-area: city-state;
+}
+
+#grand-company {
+    grid-area: grand-company;
+}
+
+#char-image {
+    grid-area: char-image;
+}
+
+#major-equip {
+    grid-area: major-equip;
+}
+
+#t-item-lvl {
+    grid-area: t-item-lvl;
+}
+
+#total-minion {
+    grid-area: total-minion;
+}
+
+#job-lvl {
+    grid-area: job-lvl;
+}
+
+#recent-minion {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-area: recent-minion;
+}
+
+#t-achievement {
+    grid-area: t-achievement;
+}
+
+#recent-achievement {
+    grid-area: recent-achievement;
+}
+
+#t-mounts {
+    grid-area: t-mounts;
+}
+
+#fav-mount {
+    grid-area: fav-mount;
+}
+
+#recent-mounts {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-area: recent-mounts;
+}
+
+#lore {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-area: lore;
+}
+
+#lore p {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
