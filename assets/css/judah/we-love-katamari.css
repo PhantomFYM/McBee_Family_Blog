@@ -1,6 +1,7 @@
 body {
     text-align: center;
     margin: auto;
+    background-color: black;
 }
 
 
@@ -18,7 +19,7 @@ body {
     background-color: black;
     top: 0;
     left:0;
-    height: 897px;
+    height: 900px;
     width: 210px;
 }
 
@@ -27,18 +28,10 @@ body {
     background-color: black;
     top: 0;
     left: 1000px;
-    height: 897px;
+    height: 900px;
     width: 210px;
 }
 
-#bottom-bar {
-    position: absolute;
-    background-color: black;
-    top: 877px;
-    left: 0;
-    width: 1100px;
-    height: 20px;
-}
 #sky {
     position: absolute;
     background-color: hsl(200deg 60% 70%);
