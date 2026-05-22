@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(40deg 50% 40%);
+    text-align: center;
+}
+
+#judah-page {
+    margin: auto;
+    color: hsl(40deg 50% 15%);
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+#judah-page:hover{
+    color: black;
+}
+
+#grid-area {
+    position: relative;
+    top: 100px;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+img {
+    border: 5px double black;
+    text-align: center;
+    width: 80%;
+    animation: fade-in linear 2s;
+    width: 80vw;
+}
+
+hr {
+    width: 85vw;
+    border: hsl(40deg 50% 30%) 1px solid;
+}
+
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    img {
+        width: 800px;
+    }
+    hr {
+        width: 850px;
+    }
+}
