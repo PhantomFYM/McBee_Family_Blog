@@ -48,7 +48,7 @@ body {
     left: 0;
 }
 #house {
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     width: 250px;
     height: 170px;
@@ -202,7 +202,7 @@ body {
 }
 
 #roof {
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     width: 0px;
     height: 0px;
@@ -224,8 +224,9 @@ body {
 }
 
 #left-stump {
+    z-index: 2;
     position: absolute;
-    top: 60px;
+    top: 55px;
     left: -25px;
     width: 0px;
     height: 0px;
@@ -234,9 +235,113 @@ body {
     border-bottom: 690px solid hsl(40deg 80% 30%)
 }
 
-#right-stump {
+.branch {
+    z-index: 1;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
     position: absolute;
-    top: 60px;
+    transform: rotate(76deg);
+}
+
+.branch.first {
+    border-bottom: 160px solid hsl(40deg 80% 30%);
+    top: 410px;
+    left: 96px;
+}
+
+.branch.second {
+    border-bottom: 140px solid hsl(40deg 80% 30%);
+    top: 310px;
+    left: 79px;
+}
+
+.branch.third {
+    border-bottom: 110px solid hsl(40deg 80% 30%);
+    top: 220px;
+    left: 57px
+}
+
+.branch.third.mirror {
+    left: -87px;
+    transform: rotate(-76deg);
+}
+
+.branch.fourth {
+    border-bottom: 80px solid hsl(40deg 80% 30%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 140px;
+    left: 40px;
+}
+
+.branch.fourth.mirror {
+    left: -61px;
+    transform: rotate(-76deg);
+}
+
+.branch.fifth {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 50px solid hsl(40deg 80% 30%);
+    top: 50px;
+    left: 24px;
+}
+
+.branch.fifth.mirror {
+    transform: rotate(-76deg);
+    left: -34px;
+}
+
+.leaf {
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background-color: hsl(90deg 75% 40%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+.leaf.first {
+    top: 422px;
+    left: 140px;
+}
+
+.leaf.second {
+    top: 313px;
+    left: 115px;
+}
+
+.leaf.third {
+    top: 210px;
+    left: 75px;
+}
+
+.leaf.fourth {
+    top: 110px;
+    left: 45px
+}
+
+.leaf.fifth {
+    z-index: 1;
+    top: 70px;
+    left: 20px
+}
+
+.leaf.fifth.mirror {
+    left: -70px
+}
+
+.leaf.top {
+    z-index: 1;
+    top: -25px;
+    left: -25px;
+}
+#right-stump {
+    z-index: 1;
+    position: absolute;
+    top: 55px;
     left: 710px;
     width: 0px;
     height: 0px;
@@ -436,4 +541,91 @@ body {
     position: absolute;
     bottom: 0px;
     left: 728px;
+}
+
+.katamari {
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 50%;
+    position: absolute;
+    top: 700px;
+    animation: katamari 6s ease-in-out infinite alternate 
+}
+
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(60deg 90% 60%);
+    border-radius: 50%;
+}
+
+.circle.one {
+    top: 7px;
+    left: calc(50% - 15px);
+}
+
+.circle.two {
+    bottom: 20px;
+    left: 10px;
+}
+
+.circle.three {
+    bottom: 20px;
+    right: 10px;
+}
+
+.oval {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    background-color: hsl(60deg 90% 60%);
+    border-radius: 50% 50% 10% 10%;
+}
+
+.oval.one {
+    right: 0px;
+    top: 5px;
+    transform: rotate(39deg);
+}
+
+.oval.two {
+    right: -18px;
+    top: 46px;
+    transform: rotate(90deg);
+}
+
+.oval.three {
+    right: 0px;
+    bottom: 4px;
+    transform: rotate(140deg);
+}
+
+.oval.four {
+    left: 0px;
+    bottom: 5px;
+    transform: rotate(-140deg)
+}
+
+.oval.five {
+    left: -18px;
+    top: 46px;
+    transform: rotate(-90deg);
+}
+
+.oval.six {
+    left: 0px;
+    top: 5px;
+    transform: rotate(-39deg);
+}
+
+@keyframes katamari {
+    0% {
+
+    }
+    100% {
+        transform: translateX(790px) rotate(720deg);
+    }
 }
